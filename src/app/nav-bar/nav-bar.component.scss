@@ -1,0 +1,30 @@
+@import '../../assets/scss/variables';
+
+.nav-bar{
+    background-color: $color-primary;
+    height: 100px;
+    width: 85%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        padding: $spacer-0 $spacer-3;
+    }
+    .logo-icon{
+        font-size: $font-logo;
+        color: $color-contrasting;
+    }
+    .nav-link{
+        font-size: $font-md;
+        text-decoration: none;
+        color: $color-contrasting;
+        padding: $spacer-0 $spacer-3;
+        transition: all 0.3s;
+
+        &:hover{
+            color: $color-white;
+        }
+    }
+}

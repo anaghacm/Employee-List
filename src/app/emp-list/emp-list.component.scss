@@ -1,0 +1,67 @@
+@import '../../assets/scss/variables';
+
+.list-base{
+    background-color: $color-primary;
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+
+    .heading{
+        font-size: $font-heading;
+        color: $color-white;
+        font-weight: 600;
+        text-align: center;
+        padding: $spacer-4;
+    }
+    .table{
+        width: 90%;
+        margin: auto;
+        color: $color-white;
+    }
+    .edit-btn, .view-btn{
+        color: $color-white;
+        padding: $spacer-0 $spacer-2;
+        transition: all 0.5s;
+
+        &:hover{
+            transform: scale(1.4);
+            color: $color-contrasting;
+        }
+        &:focus{
+            border: none;
+        }
+    }
+    .table-div {
+        padding: $spacer-3 $spacer-1;
+    
+        .thead {
+            color: $color-primary;
+            background-color: $color-contrasting;
+        }
+    
+        .table-head {
+            font-size: $font-lg;
+            font-weight: 700;
+            padding: $spacer-2;
+        }
+    
+        .table-data {
+            font-size: $font-md;
+            font-weight: 400;
+            padding: $spacer-3 $spacer-2 $spacer-0;
+    
+            &.cen-col {
+                text-align: center;
+            }
+        }
+    
+        .data-row {
+            color: $color-white;
+            transition: all 0.2s;
+    
+            &:hover {
+                color: $color-contrasting;
+            }
+        }
+    }
+}

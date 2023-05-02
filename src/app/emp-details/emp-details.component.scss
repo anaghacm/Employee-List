@@ -1,0 +1,61 @@
+@import '../../assets/scss/variables';
+
+.data-base{
+    .personal-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacer-1 $spacer-0;
+    }
+
+    .input-div {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% /2);
+        padding: $spacer-1;
+
+        &.full-div{
+            width: 100%;
+        }
+    }
+
+    .form-control-label {
+        font-size: $font-sm;
+        font-weight: 400;
+        padding-left: $spacer-1;
+        padding-bottom: $spacer-md;
+    }
+
+    .form-control {
+        color: $color-primary;
+        font-size: $font-sm;
+        font-weight: 600;
+        border: 1px solid red;
+
+        &.ng-untouched, &.ng-valid{
+            border-color: $color-secondary;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+        &:disabled {
+            background-color: transparent;
+            border: none;
+        }
+    }
+    .btn {
+        background-color: $color-contrasting;
+        color: $color-primary;
+        padding: $spacer-md $spacer-2;
+        border-radius: 50px;
+        margin-left: $spacer-2;
+        width: 150px;
+    
+        &:hover {
+            background-color: $color-primary;
+            color: $color-contrasting;
+            box-shadow: rgba(0, 0, 0, 0.74) 0px 3px 2px;
+        }
+    }
+}
